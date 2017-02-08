@@ -13,9 +13,12 @@ class CreateTodolistsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tasks', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('todolists', function (Blueprint $table) {
+            $table->uuid('id');
+            $table->string('name');
             $table->timestamps();
+
+            $table->primary('id');
         });
     }
 
@@ -26,6 +29,6 @@ class CreateTodolistsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tasks');
+        Schema::dropIfExists('todolists');
     }
 }
