@@ -5,6 +5,8 @@
 
     <h1>Todo Lists</h1>
 
+    <a href="" class="button small">Add New</a>
+
     <table>
         <thead>
             <tr>
