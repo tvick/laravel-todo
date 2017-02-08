@@ -13,4 +13,8 @@
 
 Route::get('/', function () {
     return view('todolists.index');
-});
+})->name('todolists.index');
+
+Route::get('/create', function() {
+    return view('todolists.create');
+})->name('todolists.create');
