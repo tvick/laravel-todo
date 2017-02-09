@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/create', function() {
     return view('todolists.create');
 })->name('todolists.create');
+
+Route::post('/create', function() {})->name('todolists.store');
